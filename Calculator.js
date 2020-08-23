@@ -1,6 +1,8 @@
+//Add the variables
 var num1;
 var num2;
 var sign;
+//create the function init
 function init(){
   var bar=document.getElementById("mainbar");
   var zero=document.getElementById("0");
@@ -19,7 +21,7 @@ function init(){
   var multiplication=document.getElementById("multiplication");
   var sum=document.getElementById("sum");
   var substraction=document.getElementById("substraction");
-
+//make the html's buttons dinamics
   zero.onclick = function(e){
     bar.textContent = bar.textContent + "0";
   }
@@ -77,6 +79,7 @@ function init(){
     num2 = bar.textContent;
     operation();
   }
+  //create the functions previously called
   function reseting(){
      bar.textContent = "";
     num1 = 0;
@@ -85,6 +88,7 @@ function init(){
   function clean(){
   barra.textContent = "";
   }
+  //create the function operation which is gonna make the operation addecuate 
   function operation(){
     var response=0;
     switch (sign) {
